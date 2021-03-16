@@ -1,12 +1,11 @@
 package ru.netology.package_domain;
 
 public class Post {
-    private int id;
+    private int postId;
     private int ownerId;
     private int fromId;
     private int createdById;
     private String ownerLogoImageUrl;
-    private String postName;
     private String dateAndTimeOfThePost;
     private String imageOrVideoUrl;
     private String theText;
@@ -28,16 +27,19 @@ public class Post {
     private boolean markedAsAds;
     private boolean favourite;
     private int postponedId;
+    private String query;
+    private boolean ownersOnly;
+    private String domain;
 
     public Post() {
     }
 
-    public int getId() {
-        return id;
+    public int getPostId() {
+        return postId;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.postId = id;
     }
 
     public int getOwnerId() {
@@ -56,13 +58,6 @@ public class Post {
         this.ownerLogoImageUrl = ownerLogoImageUrl;
     }
 
-    public String getPostName() {
-        return postName;
-    }
-
-    public void setPostName(String postName) {
-        this.postName = postName;
-    }
 
     public String getDateAndTimeOfThePost() {
         return dateAndTimeOfThePost;
@@ -247,5 +242,29 @@ public class Post {
 
     public void setPostponedId(int postponedId) {
         this.postponedId = postponedId;
+    }
+
+    public String getQuery() {
+        return query;
+    }
+
+    public void setQuery(String query) {
+        this.query = query;
+    }
+
+    public boolean isOwnersOnly() {
+        return ownersOnly;
+    }
+
+    public void setOwnersOnly(boolean ownersOnly) {
+        this.ownersOnly = ownersOnly;
+    }
+
+    public String getDomain() {
+        return domain;
+    }
+
+    public void setDomain(String domain) {
+        this.domain = domain;
     }
 }
