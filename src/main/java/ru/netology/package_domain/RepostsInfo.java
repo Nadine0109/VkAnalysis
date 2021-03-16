@@ -2,8 +2,9 @@ package ru.netology.package_domain;
 
 public class RepostsInfo {
     private int countReposts;
-    private boolean canPushTheRepostButton;
+    private boolean canRepost;
     private int usersWhoRepostedIds;
+    private boolean currentUserReposted;
 
     public int getCountReposts() {
         return countReposts;
@@ -14,11 +15,11 @@ public class RepostsInfo {
     }
 
     public boolean isCanPushTheRepostButton() {
-        return canPushTheRepostButton;
+        return canRepost;
     }
 
     public void setCanPushTheRepostButton(boolean canPushTheRepostButton) {
-        this.canPushTheRepostButton = canPushTheRepostButton;
+        this.canRepost = canPushTheRepostButton;
     }
 
     public int getUsersWhoRepostedIds() {

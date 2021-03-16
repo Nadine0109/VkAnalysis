@@ -3,7 +3,8 @@ package ru.netology.package_domain;
 public class LikesInfo {
     private int countLikes;
     private int usersWhoLikedIds;
-    private boolean canPushTheLikeButton;
+    private boolean canLike;
+    private boolean currentUserLikes;
 
     public int getCountLikes() {
         return countLikes;
@@ -22,10 +23,10 @@ public class LikesInfo {
     }
 
     public boolean isCanPushTheLikeButton() {
-        return canPushTheLikeButton;
+        return canLike;
     }
 
     public void setCanPushTheLikeButton(boolean canPushTheLikeButton) {
-        this.canPushTheLikeButton = canPushTheLikeButton;
+        this.canLike = canPushTheLikeButton;
     }
 }

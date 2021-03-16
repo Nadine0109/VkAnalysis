@@ -19,4 +19,5 @@ public class PostViewersInfo {
     public void setUsersWhoViewedIds(int usersWhoViewedIds) {
         this.usersWhoViewedIds = usersWhoViewedIds;
     }
+
 }
