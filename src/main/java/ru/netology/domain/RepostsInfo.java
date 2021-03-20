@@ -1,4 +1,4 @@
-package ru.netology.package_domain;
+package ru.netology.domain;
 
 public class RepostsInfo {
     private int countReposts;

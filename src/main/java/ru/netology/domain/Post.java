@@ -1,4 +1,4 @@
-package ru.netology.package_domain;
+package ru.netology.domain;
 
 public class Post {
     private int postId;
@@ -28,8 +28,18 @@ public class Post {
     private boolean favourite;
     private int postponedId;
     private String query;
-    private boolean ownersOnly;
-    private String domain;
+
+    public void setPostId(int postId) {
+        this.postId = postId;
+    }
+
+    public String getQuery() {
+        return query;
+    }
+
+    public void setQuery(String query) {
+        this.query = query;
+    }
 
     public Post() {
     }
@@ -244,27 +254,4 @@ public class Post {
         this.postponedId = postponedId;
     }
 
-    public String getQuery() {
-        return query;
-    }
-
-    public void setQuery(String query) {
-        this.query = query;
-    }
-
-    public boolean isOwnersOnly() {
-        return ownersOnly;
-    }
-
-    public void setOwnersOnly(boolean ownersOnly) {
-        this.ownersOnly = ownersOnly;
-    }
-
-    public String getDomain() {
-        return domain;
-    }
-
-    public void setDomain(String domain) {
-        this.domain = domain;
-    }
 }
